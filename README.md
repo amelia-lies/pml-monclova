@@ -2,7 +2,7 @@
 
 Pronóstico horario del precio en tiempo real (MTR) del día siguiente para los 9 nodos de la zona de carga Monclova (CENACE). En la prueba de enero a junio de 2025 el modelo final se equivoca **6.9% menos que el MDA**, el precio que CENACE publica un día antes.
 
-## La presentación en 15 diapositivas
+## Executive slide deck
 
 <table>
 <tr><td><a href="docs/slides/01.jpg"><img src="docs/slides/01.jpg" width="310" alt="Diapositiva 1"></a></td><td><a href="docs/slides/02.jpg"><img src="docs/slides/02.jpg" width="310" alt="Diapositiva 2"></a></td><td><a href="docs/slides/03.jpg"><img src="docs/slides/03.jpg" width="310" alt="Diapositiva 3"></a></td></tr>
@@ -69,7 +69,7 @@ cd notebooks && jupyter nbconvert --to notebook --execute --inplace 01_extraccio
 python -m pytest tests
 ```
 
-Las llaves de EIA y FRED van en un archivo `.env` (`EIA_API_KEY`, `FRED_API_KEY`) que no se versiona. Los datos y cachés (`data/raw/`, `data/processed/`) no están en el repositorio. Los notebooks 05 a 08 tardan muchas horas sin esas cachés, y los experimentos pesados se corrieron en un servidor PBS (`src/pml/servidor.py`).
+Los datos y cachés (`data/raw/`, `data/processed/`) no están en el repositorio. Los notebooks 05 a 08 tardan muchas horas sin esas cachés, y los experimentos pesados se corrieron en un servidor PBS (`src/pml/servidor.py`).
 
 ## Desarrollo
 
