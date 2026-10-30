@@ -1,0 +1,5 @@
+,mezcla elegida,desarrollo vs MDA (%),test vs MDA (%),lugar en el test,correlación con el test (Spearman)
+error medio,0.6·LEAR en proporción · + modelado estadístico + 0.2·GB · todas las variables + 0.2·red sin MDA · todas las variables,-6.541454942222813,-6.660968424377456,341,0.6417069430710264
+mediana de los meses,0.5·LEAR en proporción · + modelado estadístico + 0.2·GB · + exógenas + 0.3·red sin MDA · PCA,-6.184580224984771,-1.118665581016487,81486,0.7134174500509378
+peor mes,0.5·LEAR en proporción · + nodos + 0.4·GB · todas las variables + 0.1·red sin MDA · todas las variables,-5.429784213173738,-6.897985325779688,116,0.7290005671495113
+tendencia,0.7·GB · + nodos + 0.2·GB · + exógenas + 0.1·TiDE · PCA,-1.306234120802252,-4.7854559920671225,17591,0.7679075303128171

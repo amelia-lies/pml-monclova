@@ -1,0 +1,7 @@
+,mejor versión,MAE (MXN/MWh),vs MDA (%),peor mes (%)
+LEAR,con MDA,219.2,-1.1,0.2
+LEAR en proporción,+ nodos,215.2,-2.9,-0.8
+GB,+ modelado estadístico,218.4,-1.5,1.8
+TiDE,con MDA,219.7,-0.8,0.9
+red sin MDA,PCA,236.7,6.8,74.3
+MDA,(referencia),221.6,0.0,0.0

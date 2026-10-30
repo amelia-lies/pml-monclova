@@ -1,0 +1,11 @@
+,MAE,MAE sin días de pico,vs MDA (%),p,meses mejor,de
+MDA,221.62,168.33,0.0,,,
+LEAR base,219.22,166.61,-1.08,0.237,5,6
+DNN V1 sin MDA,260.15,197.39,17.38,0.0,1,6
+DNN V2 nivel,236.95,171.15,6.92,0.001,1,6
+DNN V3 spread,221.34,168.81,-0.13,0.617,4,6
+DNN V4 MDA intermitente (w = 1),250.61,185.69,13.08,0.0,1,6
+NBEATSx V1 sin MDA,257.58,193.58,16.23,0.0,1,6
+NBEATSx V2 nivel,237.89,172.22,7.34,0.001,1,6
+NBEATSx V3 spread,222.88,170.62,0.57,0.901,2,6
+NBEATSx V4 MDA intermitente (w = 1),250.51,186.58,13.04,0.0,1,6

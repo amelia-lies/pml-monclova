@@ -1,0 +1,13 @@
+# Estados operativos del Sistema Interconectado Nacional declarados por CENACE (ene 2024 - jun 2025).
+# Armado a mano con comunicados de CENACE reproducidos en prensa. No hay un histórico oficial descargable, así que la
+# lista puede estar incompleta; no encontramos declaratorias del SIN entre junio 2024 y junio 2025.
+fecha,estado,fuente
+2024-01-12,emergencia,https://www.bloomberglinea.com/latinoamerica/mexico/mexico-declara-estado-de-emergencia-en-el-sistema-electrico/
+2024-05-07,emergencia,https://politica.expansion.mx/estados/2024/05/08/apagones-en-mexico-estado-operativo-de-emergencia-cenace
+2024-05-08,alerta,https://www.proceso.com.mx/economia/2024/5/8/cenace-declara-de-nuevo-alerta-en-el-sistema-electrico-nacional-reportan-nuevos-apagones-327362.html
+2024-05-09,emergencia,https://www.elimparcial.com/mexico/2024/05/09/alerta-en-el-sistema-electrico-nacional-cenace-en-accion/
+2024-05-09,alerta,https://abcnoticias.mx/nacional/2024/5/9/mas-apagones-cenace-activa-nuevo-estado-de-alerta-en-sistema-electrico-213107.html
+2024-05-10,alerta,https://www.jornada.com.mx/noticia/2024/05/10/economia/cenace-declara-en-nuevo-estado-de-alerta-al-sistema-electrico-del-pais-3345
+2024-05-11,alerta,https://vanguardia.com.mx/noticias/por-quinto-dia-consecutivo-cenace-declara-alerta-en-el-sistema-electrico-nacional-GK11936725
+2024-05-17,emergencia,https://www.bloomberglinea.com/latinoamerica/mexico/mexico-enfrenta-dos-nuevas-emergencias-en-el-sistema-electrico/
+2024-05-18,alerta,https://www.jornada.com.mx/noticia/2024/05/18/economia/cenace-vuelve-a-declarar-en-alerta-al-sistema-electrico-6334

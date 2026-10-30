@@ -1,0 +1,16 @@
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+requests
+truststore
+pyarrow
+openpyxl
+holidays
+joblib
+nbformat
+nbconvert
+ipykernel
+jupyter
+pytest

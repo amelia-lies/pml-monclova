@@ -1,0 +1,5 @@
+grupo,modelo,MAE,vs MDA (%),referencia,vs referencia (%),meses mejor,p
+referencias,MDA,221.6,0.0,,,,
+GB,GB base solo Monclova (notebook 05),229.4,3.5,,,,
+GB,GB base + 64 nodos,222.3,0.3,GB base solo Monclova (notebook 05),-3.1,6 de 6,0.0
+GB,GB con estadísticas móviles + 64 nodos,219.5,-0.9,GB base + 64 nodos,-1.3,2 de 6,0.074

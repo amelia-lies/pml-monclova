@@ -1,0 +1,7 @@
+,,horas dentro del intervalo (meta 80%),anchura mediana (MXN/MWh),pérdida de cuantiles (menor es mejor)
+cuantiles condicionados al MDA,desarrollo,80.9,411.9,61.1
+cuantiles condicionados al MDA,test,84.4,415.2,52.9
+"los mismos, entrenados con 64 nodos",desarrollo,77.4,334.5,57.8
+"los mismos, entrenados con 64 nodos",test,81.1,353.1,49.3
+referencia: MDA + cuantiles históricos del error,desarrollo,88.2,823.4,84.7
+referencia: MDA + cuantiles históricos del error,test,83.3,488.0,64.6

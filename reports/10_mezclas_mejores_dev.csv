@@ -1,0 +1,11 @@
+mezcla,peor mes (%),desarrollo vs MDA (%)
+0.5·LEAR en proporción · + nodos + 0.4·GB · todas las variables + 0.1·red sin MDA · todas las variables,-3.8,-5.4
+0.6·LEAR en proporción · + nodos + 0.3·GB · todas las variables + 0.1·red sin MDA · todas las variables,-3.5,-5.5
+0.6·LEAR en proporción · + modelado estadístico + 0.3·GB · + exógenas + 0.1·red sin MDA · todas las variables,-3.5,-5.5
+0.5·LEAR en proporción · + modelado estadístico + 0.3·GB · + exógenas + 0.2·red sin MDA · todas las variables,-3.3,-6.2
+0.5·LEAR en proporción · + modelado estadístico + 0.4·GB · todas las variables + 0.1·red sin MDA · todas las variables,-3.3,-5.7
+0.6·LEAR · + nodos + 0.3·GB · todas las variables + 0.1·red sin MDA · todas las variables,-3.3,-4.8
+0.5·LEAR en proporción · con MDA + 0.3·GB · todas las variables + 0.2·red sin MDA · todas las variables,-3.3,-5.9
+0.7·LEAR · con MDA + 0.2·GB · todas las variables + 0.1·red sin MDA · PCA,-3.3,-4.5
+0.6·LEAR en proporción · con MDA + 0.2·GB · todas las variables + 0.2·red sin MDA · todas las variables,-3.3,-5.9
+0.6·LEAR · con MDA + 0.3·GB · todas las variables + 0.1·red sin MDA · PCA,-3.3,-4.7

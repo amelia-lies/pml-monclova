@@ -1,0 +1,14 @@
+,lugar en el test,lugar en desarrollo,MAE desarrollo,desarrollo vs MDA (%),peor mes (%),MAE test,test vs MDA (%)
+0.4·LEAR en proporción · PCA + 0.5·GB · + modelado estadístico + 0.1·red sin MDA · todas las variables,1.0,2190.0,210.223,-5.143,-2.512,169.523,-7.563
+0.4·LEAR en proporción · PCA + 0.5·GB · todas las variables + 0.1·red sin MDA · todas las variables,2.0,2191.0,210.223,-5.143,-1.673,169.589,-7.527
+0.5·LEAR en proporción · PCA + 0.4·GB · + modelado estadístico + 0.1·red sin MDA · todas las variables,3.0,1453.0,209.781,-5.343,-2.615,169.609,-7.516
+0.5·LEAR en proporción · PCA + 0.4·GB · todas las variables + 0.1·red sin MDA · todas las variables,4.0,1087.0,209.55,-5.447,-2.631,169.618,-7.511
+0.4·LEAR en proporción · PCA + 0.4·GB · + modelado estadístico + 0.2·red sin MDA · todas las variables,5.0,516.0,209.089,-5.655,-0.966,169.7,-7.466
+0.3·LEAR en proporción · PCA + 0.6·GB · + modelado estadístico + 0.1·red sin MDA · todas las variables,6.0,3535.0,210.998,-4.793,-2.307,169.708,-7.462
+0.5·LEAR en proporción · PCA + 0.3·GB · + modelado estadístico + 0.2·red sin MDA · todas las variables,7.0,239.0,208.71,-5.826,-1.343,169.786,-7.419
+0.3·LEAR en proporción · PCA + 0.5·GB · + modelado estadístico + 0.2·red sin MDA · todas las variables,8.0,1403.0,209.755,-5.354,-0.22,169.914,-7.35
+0.3·LEAR en proporción · PCA + 0.6·GB · todas las variables + 0.1·red sin MDA · todas las variables,9.0,3967.0,211.25,-4.68,-0.612,169.927,-7.343
+0.5·LEAR en proporción · PCA + 0.3·GB · todas las variables + 0.2·red sin MDA · todas las variables,10.0,31.0,208.027,-6.134,-3.028,169.947,-7.332
+0.5·LEAR en proporción · + nodos + 0.4·GB · todas las variables + 0.1·red sin MDA · todas las variables,116.0,1146.0,209.588,-5.43,-3.772,170.742,-6.898
+0.6·LEAR en proporción · + modelado estadístico + 0.2·GB · todas las variables + 0.2·red sin MDA · todas las variables,341.0,1.0,207.124,-6.541,-3.178,171.177,-6.661
+MDA,,,221.621,0.0,0.0,183.393,0.0

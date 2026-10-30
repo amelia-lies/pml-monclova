@@ -1,0 +1,16 @@
+,columnas,% de las columnas,% de la varianza retenida,peso en la componente 1 (%),componente donde más pesa
+varias escalas,81,16.5,18.27,11.71,pc2
+clima de la zona,72,14.66,13.99,25.81,pc7
+congestión de la red,61,12.42,11.67,4.14,pc4
+estadísticas móviles,51,10.39,10.82,10.81,pc5
+MTR mismo día de la semana,48,9.78,10.75,13.2,pc10
+red en el espacio,31,6.31,7.29,4.52,pc4
+información pública del día anterior,33,6.72,5.81,7.55,pc13
+días análogos,27,5.5,4.76,2.98,pc19
+combustibles y tipo de cambio,16,3.26,3.42,3.47,pc17
+clima nacional,18,3.67,3.42,4.6,pc19
+complejidad del MTR,16,3.26,3.01,2.08,pc9
+complejidad del error del MDA,18,3.67,2.79,1.14,pc14
+estrés del sistema,12,2.44,2.32,3.96,pc16
+demanda de ERCOT,4,0.81,0.94,2.43,pc1
+inventarios de gas,3,0.61,0.74,1.6,pc1

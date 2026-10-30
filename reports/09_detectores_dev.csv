@@ -1,0 +1,7 @@
+,AUC anomalía,AUC pico,correlación con el error,la misma sin el nivel del MDA,error del 10% más riesgoso / resto
+máximo del MDA,0.757,0.693,0.68,0.425,2.102
+rareza del día,0.744,0.681,0.686,0.44,2.374
+sincronía de la red,0.589,0.731,0.296,0.335,1.378
+Isolation Forest,0.512,0.667,0.476,0.32,1.554
+error de reconstrucción (PCA),0.683,0.559,0.3,0.006,1.44
+clasificador de picos,0.851,0.642,0.529,0.259,2.109

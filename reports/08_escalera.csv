@@ -1,0 +1,28 @@
+modelo,paso,MAE desarrollo,vs MDA desarrollo (%),"peor mes, desarrollo (%)",MAE test,vs MDA test (%),"peor mes, test (%)"
+LEAR,sin MDA,268.05,20.95,70.97,250.37,36.52,174.62
+LEAR,con MDA,219.22,-1.08,0.19,180.27,-1.7,1.25
+LEAR,+ nodos,218.79,-1.28,0.82,179.12,-2.33,-0.31
+LEAR,+ exógenas,228.05,2.9,15.58,181.75,-0.89,-0.33
+LEAR,+ modelado estadístico,220.07,-0.7,1.78,181.89,-0.82,0.21
+LEAR,todas las variables,232.86,5.07,27.38,181.61,-0.97,-0.23
+LEAR,PCA,220.24,-0.62,1.56,180.29,-1.69,5.83
+LEAR en proporción,con MDA,217.84,-1.71,0.87,180.21,-1.74,6.25
+LEAR en proporción,+ nodos,215.25,-2.88,-0.83,176.54,-3.73,8.96
+LEAR en proporción,+ exógenas,219.02,-1.17,2.81,178.44,-2.7,2.97
+LEAR en proporción,+ modelado estadístico,214.53,-3.2,1.02,178.44,-2.7,8.52
+LEAR en proporción,todas las variables,218.61,-1.36,2.2,178.23,-2.81,2.2
+LEAR en proporción,PCA,215.3,-2.85,1.21,177.87,-3.01,6.56
+GB,con MDA,229.35,3.49,7.36,180.28,-1.7,10.64
+GB,+ nodos,222.34,0.32,3.57,179.9,-1.9,15.42
+GB,+ exógenas,224.87,1.47,10.17,176.59,-3.71,19.84
+GB,+ modelado estadístico,218.38,-1.46,1.75,174.14,-5.04,13.73
+GB,todas las variables,220.04,-0.71,8.65,174.47,-4.87,14.52
+GB,PCA,228.54,3.12,35.73,180.85,-1.39,8.93
+TiDE,con MDA,219.75,-0.85,0.91,178.74,-2.54,15.22
+TiDE,+ nodos,246.21,11.1,24.41,202.79,10.58,35.58
+TiDE,todas las variables,265.6,19.85,38.2,203.47,10.95,49.81
+TiDE,PCA,241.39,8.92,28.74,202.04,10.17,66.38
+red sin MDA,sin MDA,257.58,16.23,93.14,262.07,42.9,169.0
+red sin MDA,+ nodos,269.92,21.79,84.93,271.67,48.14,170.32
+red sin MDA,todas las variables,247.39,11.63,78.86,222.9,21.54,75.14
+red sin MDA,PCA,236.7,6.8,74.33,274.42,49.63,138.85

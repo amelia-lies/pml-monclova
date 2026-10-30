@@ -1,0 +1,6 @@
+grupo,modelo,MAE,vs MDA (%),referencia,vs referencia (%),meses mejor,p
+referencia,MDA,221.6,0.0,,,,
+LEAR,LEAR base,219.2,-1.1,,,,
+LEAR,LEAR en proporción,217.8,-1.7,LEAR base,-0.6,2 de 6,0.172
+TiDE,TiDE,219.7,-0.8,,,,
+TiDE,TiDE en proporción,218.0,-1.6,TiDE,-0.8,5 de 6,0.049

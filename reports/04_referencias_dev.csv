@@ -1,0 +1,6 @@
+,MAE,rMAE,MAE sin días de pico,vs MDA (%),p,meses mejor,de
+MDA,221.62,0.64,168.33,0.0,,,
+naive d-14,347.53,1.0,310.85,56.81,0.0,0,6
+naive d-8,339.68,0.98,299.95,53.27,0.0,0,6
+MDA + spread mediano d−8…d−14,249.38,0.72,203.32,12.53,0.0,0,6
+nulo (MDA + mediana del spread),222.38,0.64,169.58,0.34,0.006,1,6

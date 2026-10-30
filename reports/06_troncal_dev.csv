@@ -1,0 +1,16 @@
+grupo,modelo,MAE,vs MDA (%),referencia,vs referencia (%),meses mejor,p
+referencias,MDA,221.6,0.0,,,,
+referencias,LEAR base,219.2,-1.1,,,,
+GB,GB solo Monclova,235.3,6.2,,,,
+GB,GB + 31 nodos,219.8,-0.8,GB solo Monclova,-6.6,6 de 6,0.0
+GB,GB + 64 nodos,219.5,-0.9,GB solo Monclova,-6.7,6 de 6,0.0
+LEAR,LEAR + 31 nodos,218.3,-1.5,LEAR base,-0.4,3 de 6,0.17
+LEAR,LEAR + 64 nodos,218.8,-1.3,LEAR base,-0.2,3 de 6,0.308
+DNN,DNN solo Monclova,221.3,-0.1,,,,
+DNN,DNN + 64 nodos,245.0,10.6,DNN solo Monclova,10.7,0 de 6,0.002
+NBEATSx,NBEATSx solo Monclova,222.9,0.6,,,,
+NBEATSx,NBEATSx + 64 nodos,229.1,3.4,NBEATSx solo Monclova,2.8,2 de 6,0.15
+TiDE,TiDE solo Monclova,219.7,-0.8,,,,
+TiDE,TiDE + 64 nodos,246.2,11.1,TiDE solo Monclova,12.0,1 de 6,0.002
+NBEATSx sin MDA,NBEATSx sin MDA solo Monclova,257.6,16.2,,,,
+NBEATSx sin MDA,NBEATSx sin MDA + 64 nodos,269.9,21.8,NBEATSx sin MDA solo Monclova,4.8,2 de 6,0.078

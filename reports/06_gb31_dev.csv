@@ -1,0 +1,10 @@
+grupo,modelo,MAE,vs MDA (%),referencia,vs referencia (%),meses mejor,p
+referencias,MDA,221.6,0.0,,,,
+referencias,LEAR base,219.2,-1.1,,,,
+referencias,GB base (notebook 05),229.4,3.5,,,,
+GB,GB solo Monclova,235.3,6.2,,,,
+GB,GB + 31 nodos,219.8,-0.8,GB solo Monclova,-6.6,6 de 6,0.0
+GB,"GB + 31 nodos, Monclova pesa 10",222.3,0.3,GB solo Monclova,-5.5,6 de 6,0.0
+GB,GB + 31 nodos contra el GB del notebook 05,219.8,-0.8,GB base (notebook 05),-4.2,5 de 6,0.012
+mezcla,LEAR + GB base (50/50),221.1,-0.2,,,,
+mezcla,LEAR + GB 31 nodos (50/50),215.8,-2.6,LEAR + GB base (50/50),-2.4,5 de 6,0.007

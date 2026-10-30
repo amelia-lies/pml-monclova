@@ -1,0 +1,384 @@
+nombre,grupos,objetivo,n_features,mae_dev,nota
+T1 asinh x0.5,G0+G2,spread,216,231.241,
+T1 asinh x2,G0+G2,spread,216,235.923,
+T1 winsor 0.5%,G0+G2,spread,216,233.803,
+T1 winsor 1%,G0+G2,spread,216,233.515,
+W1 G0w+G2,G0w+G2,spread,288,234.31,
+W1 G0+G2w,G0+G2w,spread,456,234.628,
+W1 G0w+G2w,G0w+G2w,spread,528,234.883,
+S1 +G0dow,G0+G2+G0dow,spread,264,234.204,
+S1 +G4,G0+G2+G4,spread,267,234.572,
+S1 +G4+G0dow,G0+G2+G4+G0dow,spread,315,234.617,
+C1 +G1,G0+G2+G1,spread,228,235.08,
+C1 +G1f (Fourier semanal),G0+G2+G1f,spread,227,235.075,
+C1 +G7,G0+G2+G7,spread,238,234.177,
+C1 +G1+G7,G0+G2+G1+G7,spread,250,234.978,
+C1 +G1f+G7,G0+G2+G1f+G7,spread,249,234.975,
+C +G5+G6+G6g,G0+G2+G5+G6+G6g,spread,307,221.15,
+C +G4+G5+G6,G0+G2+G4+G5+G6,spread,355,221.425,
+GB base G0+G2,G0+G2,spread,0,229.353,gradient boosting L1
+GB +G4,G0+G2+G4,spread,0,234.421,gradient boosting L1
+GB +G5,G0+G2+G5,spread,0,232.745,gradient boosting L1
+GB +G6,G0+G2+G6,spread,0,247.934,gradient boosting L1
+GB +G6g,G0+G2+G6g,spread,0,235.042,gradient boosting L1
+GB +G6e,G0+G2+G6e,spread,0,238.842,gradient boosting L1
+GB +G7,G0+G2+G7,spread,0,227.809,gradient boosting L1
+GB +G5+G6,G0+G2+G5+G6,spread,0,239.862,gradient boosting L1
+PCA-LEAR k=3,G0+G2,spread,216,229.748,PCA del perfil k=3
+PCA-LEAR k=5,G0+G2,spread,216,229.758,PCA del perfil k=5
+PCA-LEAR k=8,G0+G2,spread,216,229.3,PCA del perfil k=8
+solo G4,G4,spread,51,223.39,
+solo G5,G5,spread,72,226.791,
+solo G6,G6,spread,16,227.385,
+solo G6g,G6g,spread,3,227.195,
+solo G6e,G6e,spread,4,225.851,
+solo G7,G7,spread,22,226.459,
+solo G1f,G1f,spread,11,231.549,
+B +G6,G0+G2+G6,spread,232,220.76,
+energía + congestión con la red,fase 6,por componentes,0,232.447,nb08 sección 7
+GB solo Monclova,fase 6,GB global,0,235.262,nb08 sección 7
+GB Monclova + 31 nodos,fase 6,GB global,0,219.815,nb08 sección 7
+"GB Monclova + 31 nodos, Monclova pesa 10",fase 6,GB global,0,222.291,nb08 sección 7
+residual regularizado + red,fase 6,enmascarado,0,224.75,nb08 sección 7
+solo MTR + ajuste + red,fase 6,enmascarado,0,262.452,nb08 sección 7
+"GB con la red, recortando la corrección igual todos los días (× 0.88)",nb11,compuerta,0,217.992,nb11
+Bm x0.5 winsor 1% | todo en PCA,,spread,20,223.015,
+F4 log-razon | todo en PCA,,spread,20,216.882,
+red lineal V3,G0w+G2+G1,spread,0,221.025,red mlp; control / ensamble
+DNN V3 spread + exógenas,G0w+G2+G1,spread,0,222.847,red mlp; control / ensamble
+LEAR + DNN V3 (50/50),G0w+G2+G1,spread,0,218.337,red mlp; control / ensamble
+LEAR + DNN V3 + MDA (1/3),G0w+G2+G1,spread,0,218.339,red mlp; control / ensamble
+búsqueda TiDE 0,G0w+G2+G1,spread,0,219.942,"red tide; fase 4, búsqueda"
+búsqueda TiDE 1,G0w+G2+G1,spread,0,248.99,"red tide; fase 4, búsqueda"
+búsqueda TiDE 2,G0w+G2+G1,spread,0,255.311,"red tide; fase 4, búsqueda"
+búsqueda TiDE 3,G0w+G2+G1,spread,0,221.687,"red tide; fase 4, búsqueda"
+búsqueda TiDE 4,G0w+G2+G1,spread,0,254.142,"red tide; fase 4, búsqueda"
+búsqueda TiDE 5,G0w+G2+G1,spread,0,221.612,"red tide; fase 4, búsqueda"
+búsqueda TiDE 6,G0w+G2+G1,spread,0,220.418,"red tide; fase 4, búsqueda"
+búsqueda TiDE 7,G0w+G2+G1,spread,0,248.147,"red tide; fase 4, búsqueda"
+búsqueda TiDE 8,G0w+G2+G1,spread,0,251.026,"red tide; fase 4, búsqueda"
+búsqueda TiDE 9,G0w+G2+G1,spread,0,245.687,"red tide; fase 4, búsqueda"
+búsqueda TiDE 10,G0w+G2+G1,spread,0,222.806,"red tide; fase 4, búsqueda"
+búsqueda TiDE 11,G0w+G2+G1,spread,0,243.573,"red tide; fase 4, búsqueda"
+F3 nodal,G0+G2,spread,216,58.702,fase 4: congestión + pérdidas (lineal)
+LEAR log-razón,fase 4,log-razón,0,217.836,nb08 sección 5
+TiDE V3 log-razón,fase 4,log-razón,0,218.015,nb08 sección 5
+DNN V3 log-razón,fase 4,log-razón,0,223.121,nb08 sección 5
+TiDE V3,fase 4,TiDE,0,219.746,nb08 sección 5
+TiDE V1 sin MDA,fase 4,TiDE,0,262.577,nb08 sección 5
+0.8·MDA + 0.2·TiDE sin MDA,fase 4,TiDE,0,215.13,nb08 sección 5
+DNN V3 JSU (mediana),fase 4,Johnson SU,0,226.172,nb08 sección 5
+DNN V1 JSU (mediana),fase 4,Johnson SU,0,255.945,nb08 sección 5
+NBEATSx V3 JSU (mediana),fase 4,Johnson SU,0,226.8,nb08 sección 5
+NBEATSx V1 JSU (mediana),fase 4,Johnson SU,0,252.281,nb08 sección 5
+TiDE V3 JSU (mediana),fase 4,Johnson SU,0,222.244,nb08 sección 5
+energía + parte nodal,fase 4,por componentes,0,225.015,nb08 sección 5
+energía pronosticada + parte nodal del MDA,fase 4,por componentes,0,221.984,nb08 sección 5
+"ventana LAD 28 d, encogida 0.0",fase 4,agregación en línea,0,217.091,nb08 sección 5
+"ventana LAD 28 d, encogida 0.5",fase 4,agregación en línea,0,214.434,nb08 sección 5
+"ventana LAD 56 d, encogida 0.0",fase 4,agregación en línea,0,216.364,nb08 sección 5
+"ventana LAD 56 d, encogida 0.5",fase 4,agregación en línea,0,214.683,nb08 sección 5
+Hedge η = 0.5,fase 4,agregación en línea,0,218.566,nb08 sección 5
+Hedge η = 2.0,fase 4,agregación en línea,0,228.121,nb08 sección 5
+LEAR log-razón + TiDE V3 (50/50),fase 4,combinaciones,0,217.326,nb08 sección 5
+0.4·MDA + 0.4·LEAR log-razón + 0.2·NBEATSx sin MDA,fase 4,combinaciones,0,213.265,nb08 sección 5
+enmascarado conjunto,MTR+MDA,enmascarado,0,237.775,nb08 sección 6
+enmascarado conjunto residual,MTR+MDA,enmascarado,0,235.642,nb08 sección 6
+enmascarado solo MTR + ajuste,MTR+MDA,enmascarado,0,267.424,nb08 sección 6
+enmascarado solo MTR puro,MTR+MDA,enmascarado,0,382.19,nb08 sección 6
+"enmascarado conjunto residual, regularizado",MTR+MDA,enmascarado,0,229.208,nb08 sección 6
+"DNN con cuello de 4 neuronas, MDA apagado 30%",nb08 arquitecturas,cuello para el MDA (DNN),0,224.696,nb08 arquitecturas
+"DNN con cuello de 8 neuronas, MDA apagado 50%",nb08 arquitecturas,cuello para el MDA (DNN),0,221.599,nb08 arquitecturas
+convolución del MTR + MDA tal cual,nb08 arquitecturas,convolución sobre el MTR,0,226.184,nb08 arquitecturas
+convolución del MTR + cuello de 4 y MDA apagado 30%,nb08 arquitecturas,convolución sobre el MTR,0,224.178,nb08 arquitecturas
+se pegan los resúmenes,nb08 arquitecturas,dos redes: convolución del MDA + red de historia,0,223.707,nb08 arquitecturas
+"se pegan, MDA apagado 30%",nb08 arquitecturas,dos redes: convolución del MDA + red de historia,0,223.066,nb08 arquitecturas
+"se pegan, cuello de 4, MDA apagado 50%",nb08 arquitecturas,dos redes: convolución del MDA + red de historia,0,226.02,nb08 arquitecturas
+el MDA modula a la historia (film),nb08 arquitecturas,dos redes: convolución del MDA + red de historia,0,223.173,nb08 arquitecturas
+"film, MDA apagado 30%",nb08 arquitecturas,dos redes: convolución del MDA + red de historia,0,221.988,nb08 arquitecturas
+"film, cuello de 4, MDA apagado 50%",nb08 arquitecturas,dos redes: convolución del MDA + red de historia,0,228.018,nb08 arquitecturas
+"film, MDA apagado 30%, L1 = 1",nb08 arquitecturas,dos redes: convolución del MDA + red de historia,0,226.598,nb08 arquitecturas
+convolución sobre el MTR sin MDA,nb08 arquitecturas,sin MDA,0,273.409,nb08 arquitecturas
+"convolución sobre el MTR sin MDA, L1 = 1",nb08 arquitecturas,sin MDA,0,273.434,nb08 arquitecturas
+F3 energia,G0+G2,spread,216,233.767,
+enmascarado + 31 nodos,nb09,enmascarado,0,224.75,nb09
+enmascarado + 64 nodos,nb09,enmascarado,0,222.372,nb09
+energía + congestión con la red,nb09,componentes,0,232.447,nb09
+sin decir de qué nodo viene,nb09,GB,0,219.694,nb09
+con el nodo exacto,nb09,GB,0,220.33,nb09
+solo los 15 nodos más parecidos,nb09,GB,0,233.043,nb09
+afinado con Monclova (+50 árboles),nb09,GB,0,237.192,nb09
+"más memoria (mismo día, hace 3 y 4 semanas)",nb09,GB,0,218.565,nb09
+"TiDE + 64 nodos, afinada con Monclova (+10 épocas)",nb09,TiDE,0,248.012,nb09
+LEAR + GB con la red (50/50),nb09,LEAR + GB,0,215.412,nb09
+LEAR con la red + GB con la red (50/50),nb09,LEAR + GB,0,215.501,nb09
+LEAR log-razón + TiDE con la red (50/50),nb09,LEAR log + TiDE,0,223.515,nb09
+0.8·MDA + 0.2·NBEATSx sin MDA con la red,nb09,MDA + sin MDA,0,216.154,nb09
+0.4·MDA + 0.4·LEAR log-razón + 0.2·NBEATSx sin MDA con la red,nb09,tres piezas,0,214.775,nb09
+LEAR + GB con la red + TiDE con la red (1/3),nb09,nueva,0,218.496,nb09
+"GB con la red, compuerta suave (1 − p) con solo el máximo del MDA",nb09,compuerta,0,217.395,nb09
+"GB con la red, recortando la corrección igual todos los días (× 0.74)",nb09,compuerta,0,217.595,nb09
+techo: sabiendo qué días tienen pico,nb09,compuerta,0,215.792,nb09
+sin el MDA (2/3 LEAR + 1/3 NBEATSx),nb10,modelo final,0,215.836,nb10
+sin LEAR en proporción (2/3 MDA + 1/3 NBEATSx),nb10,modelo final,0,215.781,nb10
+sin NBEATSx sin MDA (1/2 MDA + 1/2 LEAR),nb10,modelo final,0,218.017,nb10
+solo el GB con la red,nb10,LEAR + GB con la red,0,218.565,nb10
+solo LEAR,nb10,LEAR + GB con la red,0,219.22,nb10
+Bm x0.5 winsor 1% | todo en PCA,,spread,20,223.015,
+F4 log-razon | todo en PCA,,spread,20,216.882,
+LEAR · tal cual,nb10 todo,LEAR,0,229.148,nb10 todo
+LEAR · núcleo + PCA,nb10 todo,LEAR,0,219.317,nb10 todo
+LEAR · todo en PCA,nb10 todo,LEAR,0,223.015,nb10 todo
+LEAR en proporción · tal cual,nb10 todo,LEAR en proporción,0,217.942,nb10 todo
+LEAR en proporción · núcleo + PCA,nb10 todo,LEAR en proporción,0,213.991,nb10 todo
+LEAR en proporción · todo en PCA,nb10 todo,LEAR en proporción,0,216.882,nb10 todo
+GB solo Monclova · tal cual,nb10 todo,GB solo Monclova,0,223.587,nb10 todo
+GB solo Monclova · núcleo + PCA,nb10 todo,GB solo Monclova,0,220.628,nb10 todo
+GB solo Monclova · todo en PCA,nb10 todo,GB solo Monclova,0,227.092,nb10 todo
+GB con la red · tal cual,nb10 todo,GB con la red,0,220.356,nb10 todo
+GB con la red · núcleo + PCA,nb10 todo,GB con la red,0,215.947,nb10 todo
+GB con la red · todo en PCA,nb10 todo,GB con la red,0,224.622,nb10 todo
+DNN · tal cual,nb10 todo,DNN,0,222.314,nb10 todo
+DNN · núcleo + PCA,nb10 todo,DNN,0,222.478,nb10 todo
+DNN · todo en PCA,nb10 todo,DNN,0,222.283,nb10 todo
+NBEATSx · tal cual,nb10 todo,NBEATSx,0,221.91,nb10 todo
+NBEATSx · núcleo + PCA,nb10 todo,NBEATSx,0,223.566,nb10 todo
+NBEATSx · todo en PCA,nb10 todo,NBEATSx,0,221.705,nb10 todo
+TiDE · tal cual,nb10 todo,TiDE,0,233.208,nb10 todo
+TiDE · núcleo + PCA,nb10 todo,TiDE,0,220.262,nb10 todo
+TiDE · todo en PCA,nb10 todo,TiDE,0,223.733,nb10 todo
+NBEATSx sin MDA · tal cual,nb10 todo,NBEATSx sin MDA,0,252.02,nb10 todo
+NBEATSx sin MDA · núcleo + PCA,nb10 todo,NBEATSx sin MDA,0,251.904,nb10 todo
+NBEATSx sin MDA · todo en PCA,nb10 todo,NBEATSx sin MDA,0,263.767,nb10 todo
+red de dos ramas (nb08) · tal cual,nb10 todo,red de dos ramas (nb08),0,222.716,nb10 todo
+red de dos ramas (nb08) · núcleo + PCA,nb10 todo,red de dos ramas (nb08),0,225.698,nb10 todo
+modelo final (MDA + LEAR en proporción + NBEATSx sin MDA) · tal cual,nb10 todo,modelo final (MDA + LEAR en proporción + NBEATSx sin MDA),0,212.873,nb10 todo
+modelo final (MDA + LEAR en proporción + NBEATSx sin MDA) · núcleo + PCA,nb10 todo,modelo final (MDA + LEAR en proporción + NBEATSx sin MDA),0,209.586,nb10 todo
+modelo final (MDA + LEAR en proporción + NBEATSx sin MDA) · todo en PCA,nb10 todo,modelo final (MDA + LEAR en proporción + NBEATSx sin MDA),0,213.486,nb10 todo
+LEAR + GB con la red · tal cual,nb10 todo,LEAR + GB con la red,0,220.11,nb10 todo
+LEAR + GB con la red · núcleo + PCA,nb10 todo,LEAR + GB con la red,0,213.246,nb10 todo
+LEAR + GB con la red · todo en PCA,nb10 todo,LEAR + GB con la red,0,221.494,nb10 todo
+"GB con la red, compuerta suave (1 − percentil) con Isolation Forest",nb11,compuerta,0,217.106,nb11
+"GB con la red, recortando la corrección igual todos los días (× 0.79)",nb11,compuerta,0,217.708,nb11
+techo: sabiendo qué días son anómalos,nb11,compuerta,0,218.161,nb11
+GB con la red con varias escalas (G13),nb10,GB con la red,0,218.211,nb10
+GB con la red con la red en el espacio (G14),nb10,GB con la red,0,218.712,nb10
+LEAR con varias escalas (G13),nb10,LEAR,0,221.925,nb10
+LEAR con la red en el espacio (G14),nb10,LEAR,0,220.589,nb10
+Bm x0.5 winsor 1% | todo en PCA,,spread,20,223.015,
+F4 log-razon | todo en PCA,,spread,20,216.882,
+Bm x0.5 winsor 1% | todo en PCA,,spread,20,223.015,
+F4 log-razon | todo en PCA,,spread,20,216.882,
+Bm x0.5 winsor 1% | todo en PCA,,spread,20,223.015,
+F4 log-razon | todo en PCA,,spread,20,216.882,
+A G0w+G2,G0w+G2,spread,288,221.651,
+A +G0dow,G0+G2+G0dow,spread,264,220.049,
+A +G4,G0+G2+G4,spread,267,220.323,
+A +G1f,G0+G2+G1f,spread,227,221.438,
+A +G7,G0+G2+G7,spread,238,219.585,
+B +G6 (lag2),G0+G2+G6,spread,232,220.76,
+B +G6 (lag8),G0+G2+G6,spread,232,220.894,
+B +G6g,G0+G2+G6g,spread,219,220.507,
+B +G6e,G0+G2+G6e,spread,220,220.289,
+B +G5,G0+G2+G5,spread,288,219.967,
+C +G5+G6,G0+G2+G5+G6,spread,304,220.968,
+C todo,G0+G2+G4+G1f+G7+G5+G6+G6g+G6e,spread,395,222.342,
+S reducido estabilidad,G0+G2,spread,216,219.908,base + columnas elegidas por estabilidad/permutación (nb07)
+S reducido fase 4,G0+G2,spread,216,222.07,"base + columnas elegidas por estabilidad/permutación (nb07, fase 4)"
+B +G7v,G0+G2+G7v,spread,219,219.165,"fase 4: base + índice de vacaciones (única ablación, por la permutación)"
+GB + 31 nodos contra el GB del notebook 06,nb09,GB,0,219.815,nb09
+sin MTR de hace 8 a 14 días,nb10,sin…,0,217.673,nb10
+sin MTR del mismo día hace 3 y 4 semanas,nb10,sin…,0,219.544,nb10
+sin MDA del día que se pronostica,nb10,sin…,0,219.37,nb10
+sin MDA de ayer y de hace una semana,nb10,sin…,0,218.94,nb10
+sin error del MDA ya publicado (d−8 y d−14),nb10,sin…,0,218.632,nb10
+sin estadísticas móviles del MTR,nb10,sin…,0,221.506,nb10
+sin estadísticas móviles del error del MDA,nb10,sin…,0,218.333,nb10
+sin forma y sorpresa del MDA de mañana,nb10,sin…,0,218.34,nb10
+sin hora del día,nb10,sin…,0,219.709,nb10
+sin corredor del nodo,nb10,sin…,0,218.582,nb10
+sin MTR de hace 8 a 14 días,nb10,LEAR,0,220.393,nb10
+"sin MDA (del día, de ayer y de hace una semana)",nb10,LEAR,0,225.352,nb10
+sin error del MDA ya publicado (d−8 y d−14),nb10,LEAR,0,218.876,nb10
+sin MTR de hace 8 a 14 días,nb10,LEAR en proporción,0,217.871,nb10
+"sin MDA (del día, de ayer y de hace una semana)",nb10,LEAR en proporción,0,221.035,nb10
+sin error del MDA ya publicado (d−8 y d−14),nb10,LEAR en proporción,0,215.996,nb10
+B +G13,G0+G2+G13,spread,297,221.925,
+B +G14,G0+G2+G14,spread,247,220.589,
+B +G13+G14,G0+G2+G13+G14,spread,328,221.903,
+GB con la red con varias escalas,nb10,GB con la red,0,218.211,nb10
+GB con la red con la red en el espacio,nb10,GB con la red,0,218.712,nb10
+GB con la red con los dos,nb10,GB con la red,0,217.46,nb10
+LEAR con varias escalas,nb10,LEAR,0,221.925,nb10
+LEAR con la red en el espacio,nb10,LEAR,0,220.589,nb10
+LEAR con los dos,nb10,LEAR,0,221.903,nb10
+Bm x0.5 winsor 1% | todo en PCA,,spread,20,223.015,
+F4 log-razon | todo en PCA,,spread,20,216.882,
+Bm x0.5 winsor 1% | todo en PCA,,spread,20,223.015,
+F4 log-razon | todo en PCA,,spread,20,216.882,
+Bm x0.5 winsor 1% | todo,G0+G0dow+G1+G2+G4+G5+G6+G6g+G6e+G7+G7v+G8+G9+G10+G11+G12+G13+G14+G15+G16,spread,744,229.148,
+Bm x0.5 winsor 1% | todo comprimido,G0+G2,spread,216,219.317,
+Bm x0.5 winsor 1% | todo en PCA,,spread,20,223.015,
+F4 log-razon | todo,G0+G0dow+G1+G2+G4+G5+G6+G6g+G6e+G7+G7v+G8+G9+G10+G11+G12+G13+G14+G15+G16,spread,744,217.942,
+F4 log-razon | todo comprimido,G0+G2,spread,216,213.991,
+F4 log-razon | todo en PCA,,spread,20,216.882,
+LEAR · todo sin resumir,nb10 todo,LEAR,0,229.148,nb10 todo
+LEAR · rezagos + resumen PCA,nb10 todo,LEAR,0,219.317,nb10 todo
+LEAR · todo resumido en PCA,nb10 todo,LEAR,0,223.015,nb10 todo
+LEAR en proporción · todo sin resumir,nb10 todo,LEAR en proporción,0,217.942,nb10 todo
+LEAR en proporción · rezagos + resumen PCA,nb10 todo,LEAR en proporción,0,213.991,nb10 todo
+LEAR en proporción · todo resumido en PCA,nb10 todo,LEAR en proporción,0,216.882,nb10 todo
+GB solo Monclova · todo sin resumir,nb10 todo,GB solo Monclova,0,223.587,nb10 todo
+GB solo Monclova · rezagos + resumen PCA,nb10 todo,GB solo Monclova,0,220.628,nb10 todo
+GB solo Monclova · todo resumido en PCA,nb10 todo,GB solo Monclova,0,227.092,nb10 todo
+GB con la red · todo sin resumir,nb10 todo,GB con la red,0,220.356,nb10 todo
+GB con la red · rezagos + resumen PCA,nb10 todo,GB con la red,0,215.947,nb10 todo
+GB con la red · todo resumido en PCA,nb10 todo,GB con la red,0,224.622,nb10 todo
+DNN · todo sin resumir,nb10 todo,DNN,0,222.314,nb10 todo
+DNN · rezagos + resumen PCA,nb10 todo,DNN,0,222.478,nb10 todo
+DNN · todo resumido en PCA,nb10 todo,DNN,0,222.283,nb10 todo
+NBEATSx · todo sin resumir,nb10 todo,NBEATSx,0,221.91,nb10 todo
+NBEATSx · rezagos + resumen PCA,nb10 todo,NBEATSx,0,223.566,nb10 todo
+NBEATSx · todo resumido en PCA,nb10 todo,NBEATSx,0,221.705,nb10 todo
+TiDE · todo sin resumir,nb10 todo,TiDE,0,233.208,nb10 todo
+TiDE · rezagos + resumen PCA,nb10 todo,TiDE,0,220.262,nb10 todo
+TiDE · todo resumido en PCA,nb10 todo,TiDE,0,223.733,nb10 todo
+NBEATSx sin MDA · todo sin resumir,nb10 todo,NBEATSx sin MDA,0,252.02,nb10 todo
+NBEATSx sin MDA · rezagos + resumen PCA,nb10 todo,NBEATSx sin MDA,0,251.904,nb10 todo
+NBEATSx sin MDA · todo resumido en PCA,nb10 todo,NBEATSx sin MDA,0,263.767,nb10 todo
+B0 asinh,G0+G2,spread,216,233.932,
+T1 lineal,G0+G2,spread,216,264.87,
+Bm asinh x1,G0+G2,spread,216,219.829,
+Bm asinh x0.5,G0+G2,spread,216,220.086,
+Bm asinh x0.25,G0+G2,spread,216,221.249,
+Bm asinh x0.1,G0+G2,spread,216,316.733,
+solo G0 nivel,G0,mtr,96,268.048,
+solo G0,G0,spread,96,225.025,
+solo G2,G2,spread,120,220.393,
+busqueda mlp 0,G0w+G2+G1,nivel,0,250.126,red mlp; búsqueda de hiperparámetros
+busqueda mlp 1,G0w+G2+G1,nivel,0,253.839,red mlp; búsqueda de hiperparámetros
+busqueda mlp 2,G0w+G2+G1,nivel,0,255.65,red mlp; búsqueda de hiperparámetros
+busqueda mlp 3,G0w+G2+G1,nivel,0,256.11,red mlp; búsqueda de hiperparámetros
+busqueda mlp 4,G0w+G2+G1,nivel,0,239.176,red mlp; búsqueda de hiperparámetros
+busqueda mlp 5,G0w+G2+G1,nivel,0,236.911,red mlp; búsqueda de hiperparámetros
+busqueda mlp 6,G0w+G2+G1,nivel,0,242.37,red mlp; búsqueda de hiperparámetros
+busqueda mlp 7,G0w+G2+G1,nivel,0,241.022,red mlp; búsqueda de hiperparámetros
+busqueda mlp 8,G0w+G2+G1,nivel,0,255.453,red mlp; búsqueda de hiperparámetros
+busqueda mlp 9,G0w+G2+G1,nivel,0,240.504,red mlp; búsqueda de hiperparámetros
+busqueda nbeats 0,G0w+G2+G1,nivel,0,236.81,red nbeats; búsqueda de hiperparámetros
+busqueda nbeats 1,G0w+G2+G1,nivel,0,242.622,red nbeats; búsqueda de hiperparámetros
+busqueda nbeats 2,G0w+G2+G1,nivel,0,241.943,red nbeats; búsqueda de hiperparámetros
+busqueda nbeats 3,G0w+G2+G1,nivel,0,238.602,red nbeats; búsqueda de hiperparámetros
+busqueda nbeats 4,G0w+G2+G1,nivel,0,237.551,red nbeats; búsqueda de hiperparámetros
+busqueda nbeats 5,G0w+G2+G1,nivel,0,257.326,red nbeats; búsqueda de hiperparámetros
+busqueda nbeats 6,G0w+G2+G1,nivel,0,268.172,red nbeats; búsqueda de hiperparámetros
+busqueda nbeats 7,G0w+G2+G1,nivel,0,267.913,red nbeats; búsqueda de hiperparámetros
+busqueda nbeats 8,G0w+G2+G1,nivel,0,242.673,red nbeats; búsqueda de hiperparámetros
+busqueda nbeats 9,G0w+G2+G1,nivel,0,239.825,red nbeats; búsqueda de hiperparámetros
+busqueda2 mlp 0 nivel,G0w+G2+G1,nivel,0,237.715,red mlp; segunda búsqueda (L1 fuerte)
+busqueda2 mlp 0 spread,G0w+G2+G1,spread,0,222.308,red mlp; segunda búsqueda (L1 fuerte)
+busqueda2 mlp 1 nivel,G0w+G2+G1,nivel,0,234.523,red mlp; segunda búsqueda (L1 fuerte)
+busqueda2 mlp 1 spread,G0w+G2+G1,spread,0,224.289,red mlp; segunda búsqueda (L1 fuerte)
+busqueda2 mlp 2 nivel,G0w+G2+G1,nivel,0,236.49,red mlp; segunda búsqueda (L1 fuerte)
+busqueda2 mlp 2 spread,G0w+G2+G1,spread,0,227.1,red mlp; segunda búsqueda (L1 fuerte)
+busqueda2 mlp 3 nivel,G0w+G2+G1,nivel,0,238.847,red mlp; segunda búsqueda (L1 fuerte)
+busqueda2 mlp 3 spread,G0w+G2+G1,spread,0,221.682,red mlp; segunda búsqueda (L1 fuerte)
+busqueda2 mlp 4 nivel,G0w+G2+G1,nivel,0,236.104,red mlp; segunda búsqueda (L1 fuerte)
+busqueda2 mlp 4 spread,G0w+G2+G1,spread,0,223.379,red mlp; segunda búsqueda (L1 fuerte)
+busqueda2 mlp 5 nivel,G0w+G2+G1,nivel,0,240.555,red mlp; segunda búsqueda (L1 fuerte)
+busqueda2 mlp 5 spread,G0w+G2+G1,spread,0,226.883,red mlp; segunda búsqueda (L1 fuerte)
+busqueda2 mlp 6 nivel,G0w+G2+G1,nivel,0,237.974,red mlp; segunda búsqueda (L1 fuerte)
+busqueda2 mlp 6 spread,G0w+G2+G1,spread,0,224.918,red mlp; segunda búsqueda (L1 fuerte)
+busqueda2 mlp 7 nivel,G0w+G2+G1,nivel,0,241.93,red mlp; segunda búsqueda (L1 fuerte)
+busqueda2 mlp 7 spread,G0w+G2+G1,spread,0,225.122,red mlp; segunda búsqueda (L1 fuerte)
+busqueda2 mlp 8 nivel,G0w+G2+G1,nivel,0,237.937,red mlp; segunda búsqueda (L1 fuerte)
+busqueda2 mlp 8 spread,G0w+G2+G1,spread,0,224.07,red mlp; segunda búsqueda (L1 fuerte)
+busqueda2 mlp 9 nivel,G0w+G2+G1,nivel,0,234.563,red mlp; segunda búsqueda (L1 fuerte)
+busqueda2 mlp 9 spread,G0w+G2+G1,spread,0,222.084,red mlp; segunda búsqueda (L1 fuerte)
+busqueda2 mlp 10 nivel,G0w+G2+G1,nivel,0,237.53,red mlp; segunda búsqueda (L1 fuerte)
+busqueda2 mlp 10 spread,G0w+G2+G1,spread,0,222.015,red mlp; segunda búsqueda (L1 fuerte)
+busqueda2 mlp 11 nivel,G0w+G2+G1,nivel,0,236.716,red mlp; segunda búsqueda (L1 fuerte)
+busqueda2 mlp 11 spread,G0w+G2+G1,spread,0,225.444,red mlp; segunda búsqueda (L1 fuerte)
+busqueda2 nbeats 0 nivel,G0w+G2+G1,nivel,0,244.64,red nbeats; segunda búsqueda (L1 fuerte)
+busqueda2 nbeats 0 spread,G0w+G2+G1,spread,0,225.798,red nbeats; segunda búsqueda (L1 fuerte)
+busqueda2 nbeats 1 nivel,G0w+G2+G1,nivel,0,258.01,red nbeats; segunda búsqueda (L1 fuerte)
+busqueda2 nbeats 1 spread,G0w+G2+G1,spread,0,267.877,red nbeats; segunda búsqueda (L1 fuerte)
+busqueda2 nbeats 2 nivel,G0w+G2+G1,nivel,0,259.388,red nbeats; segunda búsqueda (L1 fuerte)
+busqueda2 nbeats 2 spread,G0w+G2+G1,spread,0,261.581,red nbeats; segunda búsqueda (L1 fuerte)
+busqueda2 nbeats 3 nivel,G0w+G2+G1,nivel,0,243.534,red nbeats; segunda búsqueda (L1 fuerte)
+busqueda2 nbeats 3 spread,G0w+G2+G1,spread,0,226.72,red nbeats; segunda búsqueda (L1 fuerte)
+busqueda2 nbeats 4 nivel,G0w+G2+G1,nivel,0,270.014,red nbeats; segunda búsqueda (L1 fuerte)
+busqueda2 nbeats 4 spread,G0w+G2+G1,spread,0,279.38,red nbeats; segunda búsqueda (L1 fuerte)
+busqueda2 nbeats 5 nivel,G0w+G2+G1,nivel,0,240.39,red nbeats; segunda búsqueda (L1 fuerte)
+busqueda2 nbeats 5 spread,G0w+G2+G1,spread,0,222.321,red nbeats; segunda búsqueda (L1 fuerte)
+busqueda2 nbeats 6 nivel,G0w+G2+G1,nivel,0,238.605,red nbeats; segunda búsqueda (L1 fuerte)
+busqueda2 nbeats 6 spread,G0w+G2+G1,spread,0,222.357,red nbeats; segunda búsqueda (L1 fuerte)
+busqueda2 nbeats 7 nivel,G0w+G2+G1,nivel,0,240.3,red nbeats; segunda búsqueda (L1 fuerte)
+busqueda2 nbeats 7 spread,G0w+G2+G1,spread,0,231.021,red nbeats; segunda búsqueda (L1 fuerte)
+busqueda2 nbeats 8 nivel,G0w+G2+G1,nivel,0,257.439,red nbeats; segunda búsqueda (L1 fuerte)
+busqueda2 nbeats 8 spread,G0w+G2+G1,spread,0,270.743,red nbeats; segunda búsqueda (L1 fuerte)
+busqueda2 nbeats 9 nivel,G0w+G2+G1,nivel,0,239.881,red nbeats; segunda búsqueda (L1 fuerte)
+busqueda2 nbeats 9 spread,G0w+G2+G1,spread,0,232.039,red nbeats; segunda búsqueda (L1 fuerte)
+busqueda2 nbeats 10 nivel,G0w+G2+G1,nivel,0,244.849,red nbeats; segunda búsqueda (L1 fuerte)
+busqueda2 nbeats 10 spread,G0w+G2+G1,spread,0,237.644,red nbeats; segunda búsqueda (L1 fuerte)
+busqueda2 nbeats 11 nivel,G0w+G2+G1,nivel,0,240.463,red nbeats; segunda búsqueda (L1 fuerte)
+busqueda2 nbeats 11 spread,G0w+G2+G1,spread,0,237.744,red nbeats; segunda búsqueda (L1 fuerte)
+DNN V1 sin MDA,G0w+G2+G1,nivel,0,260.149,red mlp; variante del papel del MDA
+DNN V2 nivel,G0w+G2+G1,nivel,0,236.947,red mlp; variante del papel del MDA
+DNN V3 spread,G0w+G2+G1,spread,0,221.338,red mlp; variante del papel del MDA
+DNN V4 MDA intermitente (w = 1),G0w+G2+G1,nivel,0,250.61,red mlp; variante del papel del MDA
+NBEATSx V1 sin MDA,G0w+G2+G1,nivel,0,257.58,red nbeats; variante del papel del MDA
+NBEATSx V2 nivel,G0w+G2+G1,nivel,0,237.889,red nbeats; variante del papel del MDA
+NBEATSx V3 spread,G0w+G2+G1,spread,0,222.877,red nbeats; variante del papel del MDA
+NBEATSx V4 MDA intermitente (w = 1),G0w+G2+G1,nivel,0,250.513,red nbeats; variante del papel del MDA
+"GB + 31 nodos, Monclova pesa 10",nb09,GB,0,222.291,nb09
+GB + 31 nodos contra el GB del notebook 05,nb09,GB,0,219.815,nb09
+LEAR + GB 31 nodos (50/50),nb09,mezcla,0,215.805,nb09
+GB + 31 nodos,nb09,GB,0,219.815,nb09
+GB + 64 nodos,nb09,GB,0,219.544,nb09
+LEAR + 31 nodos,nb09,LEAR,0,218.325,nb09
+LEAR + 64 nodos,nb09,LEAR,0,218.79,nb09
+DNN + 64 nodos,nb09,DNN,0,245.038,nb09
+NBEATSx + 64 nodos,nb09,NBEATSx,0,229.09,nb09
+TiDE + 64 nodos,nb09,TiDE,0,246.212,nb09
+NBEATSx sin MDA + 64 nodos,nb09,NBEATSx sin MDA,0,269.923,nb09
+GB base + 64 nodos,nb09,GB,0,222.34,nb09
+GB con estadísticas móviles + 64 nodos,nb09,GB,0,219.544,nb09
+LEAR · + exógenas,nb07,LEAR,0,228.046,nb07
+LEAR · + modelado estadístico,nb07,LEAR,0,220.069,nb07
+GB · + exógenas,nb07,GB,0,224.874,nb07
+GB · + modelado estadístico,nb07,GB,0,218.38,nb07
+LEAR · todas las variables,nb07,LEAR,0,232.859,nb07
+LEAR · todas contra + modelado estadístico,nb07,LEAR,0,232.859,nb07
+GB · todas las variables,nb07,GB,0,220.042,nb07
+GB · todas contra + modelado estadístico,nb07,GB,0,220.042,nb07
+LEAR sin rezagos del MTR,nb07,LEAR,0,233.024,nb07
+LEAR sin MDA y su error,nb07,LEAR,0,235.817,nb07
+LEAR sin estadísticas móviles y varias escalas,nb07,LEAR,0,228.103,nb07
+LEAR sin complejidad y correlación del error del MDA,nb07,LEAR,0,232.807,nb07
+LEAR sin complejidad y correlación del MTR,nb07,LEAR,0,232.862,nb07
+LEAR sin la red: congestión y red en el espacio,nb07,LEAR,0,220.592,nb07
+LEAR sin días análogos,nb07,LEAR,0,232.946,nb07
+LEAR sin calendario y vacaciones,nb07,LEAR,0,230.89,nb07
+LEAR sin clima,nb07,LEAR,0,235.383,nb07
+"LEAR sin combustibles, gas y Texas",nb07,LEAR,0,284.899,nb07
+LEAR sin estado del sistema e información pública,nb07,LEAR,0,236.63,nb07
+GB sin rezagos del MTR,nb07,GB,0,220.397,nb07
+GB sin MDA y su error,nb07,GB,0,221.44,nb07
+GB sin estadísticas móviles y varias escalas,nb07,GB,0,223.617,nb07
+GB sin complejidad y correlación del error del MDA,nb07,GB,0,220.622,nb07
+GB sin complejidad y correlación del MTR,nb07,GB,0,220.162,nb07
+GB sin la red: congestión y red en el espacio,nb07,GB,0,224.046,nb07
+GB sin días análogos,nb07,GB,0,222.449,nb07
+GB sin calendario y vacaciones,nb07,GB,0,222.353,nb07
+GB sin clima,nb07,GB,0,219.394,nb07
+"GB sin combustibles, gas y Texas",nb07,GB,0,218.63,nb07
+GB sin estado del sistema e información pública,nb07,GB,0,227.049,nb07
+LEAR · PCA,nb07,LEAR,0,220.237,nb07
+LEAR · PCA contra la base,nb07,LEAR,0,220.237,nb07
+GB · PCA,nb07,GB,0,228.538,nb07
+GB · PCA contra la base,nb07,GB,0,228.538,nb07
+Bm x0.5 winsor 1%,G0+G2,spread,216,219.22,
+F4 log-razon,G0+G2,spread,216,217.836,
+S reducido fase 5,G0+G2,spread,216,217.629,
+S reducido fase 6,G0+G2,spread,216,217.649,

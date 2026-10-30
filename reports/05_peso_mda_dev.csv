@@ -1,0 +1,7 @@
+,MAE,MAE sin días de pico,vs MDA (%),p,meses mejor,de
+MDA,221.62,168.33,0.0,,,
+nulo (MDA + mediana del spread),222.38,169.59,0.34,0.006,1,6
+"solo historia del MTR, nivel (G0)",268.05,215.28,20.95,0.0,0,6
+"solo MTR, objetivo spread (G0)",225.02,171.36,1.54,0.002,0,6
+solo MDA e historial (G2),220.39,168.27,-0.55,0.28,4,6
+base (G0 + G2),219.22,166.61,-1.08,0.237,5,6

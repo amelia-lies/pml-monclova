@@ -1,0 +1,7 @@
+,,horas dentro del intervalo (meta 80%),horas sobre el cuantil 90 (meta 10%),anchura mediana (MXN/MWh),pérdida de cuantiles
+cuantiles condicionados al MDA,todos los días,80.9,7.7,411.9,79.0
+cuantiles condicionados al MDA,días con pico,72.8,19.1,431.0,169.0
+cuantiles condicionados al MDA,días sin pico,82.5,5.4,407.5,60.7
+referencia: MDA + cuantiles históricos del error,todos los días,88.2,5.0,823.4,93.5
+referencia: MDA + cuantiles históricos del error,días con pico,82.7,13.2,882.8,180.8
+referencia: MDA + cuantiles históricos del error,días sin pico,89.4,3.3,807.7,75.9

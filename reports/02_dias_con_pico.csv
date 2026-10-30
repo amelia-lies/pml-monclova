@@ -1,0 +1,4 @@
+,días,días con MTR > 2000,días con pico (MTR > 3000),días con MTR > 5000,"error medio del MDA, días normales","error medio del MDA, días con pico",% de los días con pico,% del error del MDA en días con pico,cuántas veces más error en un día con pico
+2024 ene–jun (entrenamiento),182.0,82.0,54.0,36.0,296.75,1270.65,29.67,64.37,4.28
+2024 jul–dic (desarrollo),184.0,64.0,31.0,10.0,168.33,484.62,16.85,36.84,2.88
+2025 ene–jun (test),181.0,39.0,18.0,8.0,140.58,571.06,9.94,30.97,4.06

@@ -1,0 +1,5 @@
+,series de entrenamiento,series efectivamente distintas,error del GB en desarrollo,GB vs solo Monclova (%)
+solo Monclova,1,1.0,235.262,0.0
+Monclova + 15 más parecidos,16,1.001,233.043,-0.943
+Monclova + 31 originales,32,1.533,219.815,-6.566
+Monclova + 64,64,1.47,219.544,-6.681

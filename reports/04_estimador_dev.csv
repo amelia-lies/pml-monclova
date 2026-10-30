@@ -1,0 +1,10 @@
+,MAE,MAE sin días de pico,vs MDA (%),p,meses mejor,de
+MDA,221.62,168.33,0.0,,,
+nulo (MDA + mediana del spread),222.38,169.58,0.34,0.006,1,6
+intercepto media · asinh ×1,233.93,183.5,5.56,0.0,0,6
+intercepto media · lineal (sin asinh),264.87,223.79,19.51,0.0,0,6
+intercepto mediana · asinh ×1,219.83,166.95,-0.81,0.254,4,6
+intercepto mediana · asinh ×0.5,220.09,168.24,-0.69,0.266,5,6
+intercepto mediana · asinh ×0.25,221.25,170.31,-0.17,0.459,3,6
+intercepto mediana · asinh ×0.1,316.73,278.92,42.92,0.355,0,6
+intercepto mediana · asinh ×0.5 · recorte 1%,219.22,166.61,-1.08,0.237,5,6
